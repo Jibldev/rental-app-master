@@ -10,6 +10,7 @@ const Home = () => {
           backgroundImage="app/images/Banner1.png"
           text="Chez vous, partout et ailleurs"
         />
+
       </div>
     </>
   );

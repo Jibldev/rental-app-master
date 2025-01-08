@@ -1,4 +1,4 @@
-import styles from "../styles/banner.sass";
+import "app/styles/banner.sass";
 
 interface BannerProps {
   backgroundImage: string;
