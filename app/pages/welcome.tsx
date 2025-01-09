@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import Banner from "../components/banner";
+import Footer from "../components/footer";
 
 const Home = () => {
   return (
@@ -10,8 +11,8 @@ const Home = () => {
           backgroundImage="app/images/Banner1.png"
           text="Chez vous, partout et ailleurs"
         />
-
       </div>
+      <Footer />
     </>
   );
 };

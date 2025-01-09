@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import Banner from "../components/banner";
 import Dropdown from "app/components/reglesabout";
+import Footer from "../components/footer";
 
 const About = () => {
   return (
@@ -37,6 +38,7 @@ const About = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

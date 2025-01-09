@@ -2,7 +2,7 @@ import "app/styles/banner.sass";
 
 interface BannerProps {
   backgroundImage: string;
-  text?: string; // Le texte est facultatif
+  text?: string;
 }
 
 const Banner = ({ backgroundImage, text }: BannerProps) => {
