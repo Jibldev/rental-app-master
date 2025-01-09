@@ -5,10 +5,7 @@ import "app/styles/reglesabout.sass"
 const Dropdown = ({ title, content }: { title: string; content: string }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = (
-    event: React.MouseEvent<HTMLElement>
-  ) => {
-    console.log("Dropdown clicked!" + event);
+  const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
