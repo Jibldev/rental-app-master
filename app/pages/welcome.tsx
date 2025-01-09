@@ -6,14 +6,16 @@ import 'app/styles/app.sass';
 const Home = () => {
   return (
     <>
-      <Header />
-      <div>
-        <Banner
-          backgroundImage="app/images/Banner1.png"
-          text="Chez vous, partout et ailleurs"
-        />
+      <div className="app">
+        <Header />
+        <main className="main-content">
+          <Banner
+            backgroundImage="app/images/Banner1.png"
+            text="Chez vous, partout et ailleurs"
+          />
+        </main>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
