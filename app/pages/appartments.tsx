@@ -24,6 +24,13 @@ function Appartments() {
           </div>
         </div>
         <p className="location">{logement.location}</p>
+        <ul>
+          {logement.tags.map((tag, index) => (
+            <li key={index}>
+              {tag}
+            </li>
+          ))}
+        </ul>
         <div className="drop-lgmt">
           <Dropdown title="Description" content={logement.description} />
           <Dropdown title="Équipements" content={logement.equipments} />
