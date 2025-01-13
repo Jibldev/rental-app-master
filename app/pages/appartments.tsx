@@ -16,8 +16,8 @@ function Appartments() {
   }
   return (
     <>
-      <Header />
       <title>{logement.title}</title>
+      <Header />
       <div className="container-lgmt">
         <div className="infos">
           <h1>{logement.title}</h1>
