@@ -14,10 +14,16 @@ function Appartments() {
   return (
     <>
       <Header />
+      <title>{logement.title}</title>
       <div className="container-lgmt">
-        <title>{logement.title}</title>
-        <h1>{logement.title}</h1>
-        <p>{logement.location}</p>
+        <div className="infos">
+          <h1>{logement.title}</h1>
+          <div className="host">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture}></img>
+          </div>
+        </div>
+        <p className="location">{logement.location}</p>
         <div className="drop-lgmt">
           <Dropdown title="Description" content={logement.description} />
           <Dropdown title="Équipements" content={logement.equipments} />

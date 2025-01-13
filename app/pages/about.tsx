@@ -2,7 +2,7 @@ import Header from "../components/header";
 import Banner from "../components/banner";
 import Dropdown from "app/components/reglesabout";
 import Footer from "../components/footer";
-import "app/styles/app.sass";
+import "app/styles/about.sass";
 
 const About = () => {
   return (
