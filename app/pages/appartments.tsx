@@ -2,7 +2,8 @@ import Header from "../components/header";
 import Dropdown from "app/components/reglesabout";
 import Footer from "../components/footer";
 import logements from "../logements.json";
-import StarRating from "../components/notation.js"
+import StarRating from "../components/notation.js";
+import Carousel from "../components/carousel";
 import { useParams } from "react-router-dom";
 import "app/styles/appartments.sass";
 
@@ -19,6 +20,9 @@ function Appartments() {
       <title>{logement.title}</title>
       <Header />
       <div className="container-lgmt">
+        <div className="carou">
+          <Carousel images={logement.pictures} />
+        </div>
         <div className="infos">
           <h1>{logement.title}</h1>
           <div className="host">
