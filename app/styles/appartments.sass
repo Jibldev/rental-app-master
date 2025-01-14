@@ -67,3 +67,54 @@ html, body, #root
       color: white
       border-radius: 50px
       padding: 8px
+
+@media (max-width: 768px)
+
+  html, body, #root
+    height: 100%
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+
+  .container-lgmt
+    display: flex
+    flex-direction: column
+
+    .infos,.adds
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+
+    .drop-lgmt
+      display: flex
+      flex-direction: column
+      gap: 10px
+      margin: 15px 0
+
+  .infos
+    h1
+      font-size: 1.5rem !important
+      text-align: center
+  .adds
+
+    ul
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+      margin: 0
+
+  .host
+    display: flex
+    align-items: center
+    margin-top: 10px
+
+  p
+    margin: 0
+    font-size: 0.9rem
+
+    img
+      width: 40px
+      height: 40px
+      border-radius: 50%

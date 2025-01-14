@@ -41,6 +41,9 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       <button className="carousel-button next" onClick={handleNext}>
         <FontAwesomeIcon icon={faChevronRight} />
       </button>
+      <div className="carousel-counter">
+        {currentIndex + 1}/{images.length}
+      </div>
     </div>
   );
 };

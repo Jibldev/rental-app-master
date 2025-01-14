@@ -7,6 +7,17 @@
   display: flex
   align-items: center
 
+  .carousel-counter
+    position: absolute
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)
+    color: #fff
+    padding: 5px 10px
+    border-radius: 5pxs
+    font-size: 1rem
+    z-index: 10
+
   .carousel-track
     display: flex
     transition: transform 0.5s ease-in-out
@@ -34,3 +45,10 @@
 
     &.next
       right: 10px
+
+  @media (max-width: 768px)
+    height: 40vh
+  .carousel-item
+    object-fit: cover
+    .carousel-counter
+      font-size: 0.9rem
