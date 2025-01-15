@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import logements from "../logements.json";
 import StarRating from "../components/notation.js";
 import Carousel from "../components/carousel";
+import NotFound from "app/pages/notfound";
 import { useParams } from "react-router-dom";
 import "app/styles/appartments.sass";
 
@@ -13,7 +14,7 @@ function Appartments() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
   if (!logement) {
-    return <h1>Logement non trouvé</h1>; // Si aucun logement ne correspond
+    return <NotFound />;
   }
   return (
     <>
