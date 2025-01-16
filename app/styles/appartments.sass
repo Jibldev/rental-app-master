@@ -7,6 +7,9 @@ html, body, #root
   padding: 0
   font-family: Montserrat
 
+  .footer
+    margin-top: 50px
+
   .container-lgmt
     max-width: 1600px
     margin: 0 auto
@@ -26,14 +29,22 @@ html, body, #root
 
   .host
     display: flex
+    flex-direction: column
     align-items: center
-    justify-content: flex-end
     color: $primary-color
 
     img
       width: 50px
-      margin-left: 10px
       border-radius: 20px
+      margin-left: 20px
+
+    .imgp
+      display: flex
+      margin-bottom: 30px
+      margin-top: 40px
+
+      p
+        margin-top: 10px
 
   .drop-lgmt
     display: flex
@@ -51,7 +62,8 @@ html, body, #root
 
   .adds
     display: flex
-    justify-content: space-between
+    flex-direction: column
+    margin-top: 20px
 
     .ul
       list-style: none
@@ -64,7 +76,7 @@ html, body, #root
       border: 1px solid $primary-color
       background-color: $primary-color
       color: white
-      border-radius: 50px
+      border-radius: 10px
       padding: 8px
 
 @media (max-width: 768px)
@@ -80,7 +92,22 @@ html, body, #root
     display: flex
     flex-direction: column
 
-    .infos,.adds
+    .host
+      width: 100%
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+
+      p
+        margin: 0
+        font-size: 0.9rem
+
+      img
+        width: 40px
+        height: 40px
+        border-radius: 50%
+
+    .infos
       display: flex
       justify-content: space-between
       align-items: center
@@ -92,28 +119,12 @@ html, body, #root
       gap: 10px
       margin: 15px 0
 
-  .infos
     h1
       font-size: 1.5rem !important
       text-align: center
-  .adds
 
     ul
       display: flex
       flex-wrap: wrap
       gap: 10px
       margin: 0
-
-  .host
-    display: flex
-    align-items: center
-    margin-top: 10px
-
-  p
-    margin: 0
-    font-size: 0.9rem
-
-    img
-      width: 40px
-      height: 40px
-      border-radius: 50%

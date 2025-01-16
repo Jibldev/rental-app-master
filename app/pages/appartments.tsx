@@ -25,23 +25,27 @@ function Appartments() {
           <Carousel images={logement.pictures} />
         </div>
         <div className="infos">
-          <h1>{logement.title}</h1>
+          <div className="adds">
+            <h1>{logement.title}</h1>
+            <p className="location">{logement.location}</p>
+            <ul>
+              {logement.tags.map((tag, index) => (
+                <li key={index}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="host">
-            <p>{logement.host.name}</p>
-            <img src={logement.host.picture}></img>
+            <div className="imgp">
+              <p>{logement.host.name}</p>
+              <img src={logement.host.picture}></img>
+            </div>
+            <StarRating rating={logement.rating} />
           </div>
         </div>
-        <p className="location">{logement.location}</p>
-        <div className="adds">
-          <ul>
-            {logement.tags.map((tag, index) => (
-              <li key={index}>
-                {tag}
-              </li>
-            ))}
-          </ul>
-          <StarRating rating={logement.rating} />
-        </div>
+
+
         <div className="drop-lgmt">
           <Dropdown title="Description" content={logement.description} />
           <Dropdown title="Équipements" content={logement.equipments} />

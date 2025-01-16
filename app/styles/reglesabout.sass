@@ -27,9 +27,15 @@ $text-color: #333
       &.rotate
         transform: rotate(-180deg)
 
-  &-content
-    padding: 15px
+  .dropdown-content
+    max-height: 0
+    padding: 0 15px
+    overflow: hidden
     background-color: #F6F6F673
     color: $text-color
     border-top: 1px solid $primary-color
-    display: block
+    transition: max-height 0.5s ease, padding 0.3s ease
+
+    &.open
+      padding: 15px 15px 15px 15px
+      max-height: 500px
