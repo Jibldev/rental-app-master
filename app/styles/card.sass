@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+$primary-color: #eeeeee
+
+.card-container
+  background-color: $primary-color
+  width: 80%
+  margin: 0 auto
+  display: flex
+  padding: 50px
+  border-radius: 15px
+  margin-bottom: 40px
+  gap: 30px
+  justify-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+  .card
+    width: calc((100% - 60px) / 3)
+    min-width: 300px
+    height: 300px
+    border: 1px solid #ddd
+    border-radius: 8px
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    margin: 0
+    text-align: center
+    overflow: hidden
+    cursor: pointer
+
+  img
+    width: 100%
+    height: 200px
+    margin: 0
+    object-fit: cover
+
+  .title
+    height: 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  h2
+    font-size: 1rem
+    padding: 10px

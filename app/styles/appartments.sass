@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+$primary-color: #FF6060
+
+html, body, #root
+  height: 100%
+  margin: 0
+  padding: 0
+  font-family: Montserrat
+
+  .footer
+    margin-top: 50px
+
+  .container-lgmt
+    max-width: 1600px
+    margin: 0 auto
+    padding: 0 20px
+
+  .infos
+    display: flex
+    justify-content: space-between
+
+    h1
+      color: $primary-color
+      font-weight: 500
+      font-size: 50px
+
+    .location
+      font-size: 20px
+
+  .host
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: $primary-color
+
+    img
+      width: 50px
+      border-radius: 20px
+      margin-left: 20px
+
+    .imgp
+      display: flex
+      margin-bottom: 30px
+      margin-top: 40px
+
+      p
+        margin-top: 10px
+
+  .drop-lgmt
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: stretch
+    margin-top: 50px
+    gap: 30px
+
+  .dropdown
+    width: 100%
+
+  p
+    margin-bottom: 20px
+
+  .adds
+    display: flex
+    flex-direction: column
+    margin-top: 20px
+
+    .ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+    li
+      display: inline
+      margin-right: 10px
+      border: 1px solid $primary-color
+      background-color: $primary-color
+      color: white
+      border-radius: 10px
+      padding: 8px
+
+@media (max-width: 768px)
+
+  html, body, #root
+    height: 100%
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+
+  .container-lgmt
+    display: flex
+    flex-direction: column
+
+    .host
+      width: 100%
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+
+      p
+        margin: 0
+        font-size: 0.9rem
+
+      img
+        width: 40px
+        height: 40px
+        border-radius: 50%
+
+    .infos
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+
+    .drop-lgmt
+      display: flex
+      flex-direction: column
+      gap: 10px
+      margin: 15px 0
+
+    h1
+      font-size: 1.5rem !important
+      text-align: center
+
+    ul
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+      margin: 0

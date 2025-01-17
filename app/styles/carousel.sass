@@ -1,0 +1,54 @@
+
+.carousel
+  position: relative
+  width: 100%
+  height: 70vh
+  overflow: hidden
+  display: flex
+  align-items: center
+
+  .carousel-counter
+    position: absolute
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)
+    color: #fff
+    padding: 5px 10px
+    border-radius: 5pxs
+    font-size: 1rem
+    z-index: 10
+
+  .carousel-track
+    display: flex
+    transition: transform 0.5s ease-in-out
+    width: 100%
+    height: 100%
+
+  .carousel-item
+    flex: 0 0 100%
+    height: 100%
+    object-fit: cover
+
+  .carousel-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    height: 100%
+    font-size: 5rem
+    color: white
+    border: none
+    cursor: pointer
+    z-index: 10
+
+    &.prev
+      left: 10px
+
+    &.next
+      right: 10px
+
+  @media (max-width: 768px)
+    height: 40vh
+  .carousel-item
+    object-fit: cover
+    .carousel-counter
+      font-size: 0.9rem

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+$primary-color: #ff6b6b
+$secondary-color: #fff
+$text-color: #333
+
+.dropdown
+  width: 80%
+  margin: 10px auto
+  border-radius: 5px
+  overflow: hidden
+
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 15px
+    background-color: $primary-color
+    color: $secondary-color
+    cursor: pointer
+
+    h3
+      margin: 0
+
+    .arrow
+      transition: transform 0.3s ease
+
+      &.rotate
+        transform: rotate(-180deg)
+
+  .dropdown-content
+    max-height: 0
+    padding: 0 15px
+    overflow: hidden
+    background-color: #F6F6F673
+    color: $text-color
+    border-top: 1px solid $primary-color
+    transition: max-height 0.5s ease, padding 0.3s ease
+
+    &.open
+      padding: 15px 15px 15px 15px
+      max-height: 500px
