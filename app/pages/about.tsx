@@ -10,7 +10,7 @@ const About = () => {
       <title>Kasa - À Propos</title>
       <div className="app">
         <Header />
-        <Banner backgroundImage="app/images/Banner2.png" text="" />
+        <Banner backgroundImage="/Banner2.png" text="" />
         <main className="main-content">
           <div className="dropdown-container">
             <div className="dropdown">

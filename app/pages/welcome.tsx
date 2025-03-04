@@ -11,7 +11,7 @@ const Home = () => {
         <Header />
         <main className="main-content">
           <Banner
-            backgroundImage="app/images/Banner1.png"
+            backgroundImage="/Banner1.png"
             text="Chez vous, partout et ailleurs"
           />
           <Card />
