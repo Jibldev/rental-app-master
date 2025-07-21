@@ -4,7 +4,7 @@ import 'app/styles/app.sass';
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "Kaza" },
+    { title: "Kasa" },
     { name: "description", },
   ];
 }
